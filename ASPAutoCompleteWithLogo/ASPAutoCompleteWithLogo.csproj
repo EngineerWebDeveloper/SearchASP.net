@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F326FB3-273A-4BED-86A9-F1D5AEDA0CFF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASPAutoCompleteWithLogo</RootNamespace>
+    <AssemblyName>ASPAutoCompleteWithLogo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\MyDatabase.mdf" />
+    <Content Include="App_Data\MyDatabase_log.ldf">
+      <DependentUpon>MyDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="CountryLogo\afghanistan_preview.gif" />
+    <Content Include="CountryLogo\albania_preview.gif" />
+    <Content Include="CountryLogo\algeria_preview.gif" />
+    <Content Include="CountryLogo\andorra_preview.gif" />
+    <Content Include="CountryLogo\angola_preview.gif" />
+    <Content Include="CountryLogo\antigua_and_barbuda_preview.gif" />
+    <Content Include="CountryLogo\argentina_preview.gif" />
+    <Content Include="CountryLogo\armenia_preview.gif" />
+    <Content Include="CountryLogo\australia_preview.gif" />
+    <Content Include="CountryLogo\austria_preview.gif" />
+    <Content Include="CountryLogo\azerbaijan_preview.gif" />
+    <Content Include="CountryLogo\bahamas_preview.gif" />
+    <Content Include="CountryLogo\bahrain_preview.gif" />
+    <Content Include="CountryLogo\bangladesh_preview.gif" />
+    <Content Include="CountryLogo\barbados_preview.gif" />
+    <Content Include="CountryLogo\belarus_preview.gif" />
+    <Content Include="CountryLogo\belgium_preview.gif" />
+    <Content Include="CountryLogo\belize_preview.gif" />
+    <Content Include="CountryLogo\benin_preview.gif" />
+    <Content Include="CountryLogo\bhutan_preview.gif" />
+    <Content Include="CountryLogo\bolivia_preview.gif" />
+    <Content Include="CountryLogo\bosnia_and_herzegovina_preview.gif" />
+    <Content Include="CountryLogo\botswana_preview.gif" />
+    <Content Include="CountryLogo\brazil_preview.gif" />
+    <Content Include="CountryLogo\brunei_preview.gif" />
+    <Content Include="CountryLogo\bulgaria_preview.gif" />
+    <Content Include="CountryLogo\burkina_faso_preview.gif" />
+    <Content Include="CountryLogo\burma_preview.gif" />
+    <Content Include="CountryLogo\burundi_preview.gif" />
+    <Content Include="CountryLogo\cambodia_preview.gif" />
+    <Content Include="CountryLogo\cameroon_preview.gif" />
+    <Content Include="CountryLogo\canada_preview.gif" />
+    <Content Include="CountryLogo\cape_verde_preview.gif" />
+    <Content Include="CountryLogo\central_african_republic_preview.gif" />
+    <Content Include="CountryLogo\chad_preview.gif" />
+    <Content Include="CountryLogo\chile_preview.gif" />
+    <Content Include="CountryLogo\china_preview.gif" />
+    <Content Include="CountryLogo\colombia_preview.gif" />
+    <Content Include="CountryLogo\comoros_preview.gif" />
+    <Content Include="CountryLogo\congo_brazzaville_preview.gif" />
+    <Content Include="CountryLogo\congo_kinshasa_preview.gif" />
+    <Content Include="CountryLogo\costa_rica_preview.gif" />
+    <Content Include="CountryLogo\cote_d_Ivoire_preview.gif" />
+    <Content Include="CountryLogo\croatia_preview.gif" />
+    <Content Include="CountryLogo\cuba_preview.gif" />
+    <Content Include="CountryLogo\cyprus_preview.gif" />
+    <Content Include="CountryLogo\czech_republic_preview.gif" />
+    <Content Include="CountryLogo\denmark_preview.gif" />
+    <Content Include="CountryLogo\djibouti_preview.gif" />
+    <Content Include="CountryLogo\dominican_republic_preview.gif" />
+    <Content Include="CountryLogo\dominica_preview.gif" />
+    <Content Include="CountryLogo\east_timor_preview.gif" />
+    <Content Include="CountryLogo\ecuador_preview.gif" />
+    <Content Include="CountryLogo\egypt_preview.gif" />
+    <Content Include="CountryLogo\el_salvador_preview.gif" />
+    <Content Include="CountryLogo\england_preview.gif" />
+    <Content Include="CountryLogo\equatorial_guinea_preview.gif" />
+    <Content Include="CountryLogo\eritrea_preview.gif" />
+    <Content Include="CountryLogo\estonia_preview.gif" />
+    <Content Include="CountryLogo\ethiopia_preview.gif" />
+    <Content Include="CountryLogo\european_union_preview.gif" />
+    <Content Include="CountryLogo\faroe_islands_preview.gif" />
+    <Content Include="CountryLogo\fiji_preview.gif" />
+    <Content Include="CountryLogo\finland_preview.gif" />
+    <Content Include="CountryLogo\france_preview.gif" />
+    <Content Include="CountryLogo\gabon_preview.gif" />
+    <Content Include="CountryLogo\gambia_preview.gif" />
+    <Content Include="CountryLogo\georgia_preview.gif" />
+    <Content Include="CountryLogo\germany_preview.gif" />
+    <Content Include="CountryLogo\ghana_preview.gif" />
+    <Content Include="CountryLogo\greece_preview.gif" />
+    <Content Include="CountryLogo\grenada_preview.gif" />
+    <Content Include="CountryLogo\guatemala_preview.gif" />
+    <Content Include="CountryLogo\guinea_bissau_preview.gif" />
+    <Content Include="CountryLogo\guinea_preview.gif" />
+    <Content Include="CountryLogo\guyana_preview.gif" />
+    <Content Include="CountryLogo\haiti_preview.gif" />
+    <Content Include="CountryLogo\honduras_preview.gif" />
+    <Content Include="CountryLogo\hong_kong_preview.gif" />
+    <Content Include="CountryLogo\hungary_preview.gif" />
+    <Content Include="CountryLogo\iceland_preview.gif" />
+    <Content Include="CountryLogo\india_preview.gif" />
+    <Content Include="CountryLogo\indonesia_preview.gif" />
+    <Content Include="CountryLogo\iran_preview.gif" />
+    <Content Include="CountryLogo\iraq_preview.gif" />
+    <Content Include="CountryLogo\ireland_preview.gif" />
+    <Content Include="CountryLogo\isle_of_man_preview.gif" />
+    <Content Include="CountryLogo\israel_preview.gif" />
+    <Content Include="CountryLogo\italy_preview.gif" />
+    <Content Include="CountryLogo\jamaica_preview.gif" />
+    <Content Include="CountryLogo\japan_preview.gif" />
+    <Content Include="CountryLogo\jordan_preview.gif" />
+    <Content Include="CountryLogo\kazakhstan_preview.gif" />
+    <Content Include="CountryLogo\kenya_preview.gif" />
+    <Content Include="CountryLogo\kiribati_preview.gif" />
+    <Content Include="CountryLogo\korea_north_preview.gif" />
+    <Content Include="CountryLogo\korea_south_preview.gif" />
+    <Content Include="CountryLogo\kosovo_preview.gif" />
+    <Content Include="CountryLogo\kuwait_preview.gif" />
+    <Content Include="CountryLogo\kyrgyzstan_preview.gif" />
+    <Content Include="CountryLogo\laos_preview.gif" />
+    <Content Include="CountryLogo\latvia_preview.gif" />
+    <Content Include="CountryLogo\lebanon_preview.gif" />
+    <Content Include="CountryLogo\lesotho_preview.gif" />
+    <Content Include="CountryLogo\liberia_preview.gif" />
+    <Content Include="CountryLogo\libya_preview.gif" />
+    <Content Include="CountryLogo\liechtenstein_preview.gif" />
+    <Content Include="CountryLogo\lithuania_preview.gif" />
+    <Content Include="CountryLogo\luxembourg_preview.gif" />
+    <Content Include="CountryLogo\macau_preview.gif" />
+    <Content Include="CountryLogo\macedonia_preview.gif" />
+    <Content Include="CountryLogo\madagascar_preview.gif" />
+    <Content Include="CountryLogo\malawi_preview.gif" />
+    <Content Include="CountryLogo\malaysia_preview.gif" />
+    <Content Include="CountryLogo\maldives_preview.gif" />
+    <Content Include="CountryLogo\mali_preview.gif" />
+    <Content Include="CountryLogo\malta_preview.gif" />
+    <Content Include="CountryLogo\marshall_islands_preview.gif" />
+    <Content Include="CountryLogo\mauritania_preview.gif" />
+    <Content Include="CountryLogo\mauritius_preview.gif" />
+    <Content Include="CountryLogo\mexico_preview.gif" />
+    <Content Include="CountryLogo\micronesia_preview.gif" />
+    <Content Include="CountryLogo\moldova_preview.gif" />
+    <Content Include="CountryLogo\monaco_preview.gif" />
+    <Content Include="CountryLogo\mongolia_preview.gif" />
+    <Content Include="CountryLogo\montenegro_preview.gif" />
+    <Content Include="CountryLogo\morocco_preview.gif" />
+    <Content Include="CountryLogo\mozambique_preview.gif" />
+    <Content Include="CountryLogo\namibia_preview.gif" />
+    <Content Include="CountryLogo\nauru_preview.gif" />
+    <Content Include="CountryLogo\nav_arrow.gif" />
+    <Content Include="CountryLogo\nepal_preview.gif" />
+    <Content Include="CountryLogo\netherlands_preview.gif" />
+    <Content Include="CountryLogo\new_zealand_preview.gif" />
+    <Content Include="CountryLogo\nicaragua_preview.gif" />
+    <Content Include="CountryLogo\nigeria_preview.gif" />
+    <Content Include="CountryLogo\niger_preview.gif" />
+    <Content Include="CountryLogo\norway_preview.gif" />
+    <Content Include="CountryLogo\oman_preview.gif" />
+    <Content Include="CountryLogo\pakistan_preview.gif" />
+    <Content Include="CountryLogo\palau_preview.gif" />
+    <Content Include="CountryLogo\panama_preview.gif" />
+    <Content Include="CountryLogo\papua_new_guinea_preview.gif" />
+    <Content Include="CountryLogo\paraguay_preview.gif" />
+    <Content Include="CountryLogo\peru_preview.gif" />
+    <Content Include="CountryLogo\philippines_preview.gif" />
+    <Content Include="CountryLogo\poland_preview.gif" />
+    <Content Include="CountryLogo\portugal_preview.gif" />
+    <Content Include="CountryLogo\puerto_rico_preview.gif" />
+    <Content Include="CountryLogo\qatar_preview.gif" />
+    <Content Include="CountryLogo\republic_of_china_preview.gif" />
+    <Content Include="CountryLogo\romania_preview.gif" />
+    <Content Include="CountryLogo\russia_preview.gif" />
+    <Content Include="CountryLogo\rwanda_preview.gif" />
+    <Content Include="CountryLogo\saint_kitts_and_nevis_preview.gif" />
+    <Content Include="CountryLogo\saint_lucia_preview.gif" />
+    <Content Include="CountryLogo\saint_vincent_and_the_grenadines_preview.gif" />
+    <Content Include="CountryLogo\samoa_preview.gif" />
+    <Content Include="CountryLogo\san_marino_preview.gif" />
+    <Content Include="CountryLogo\sao_tome_and_principe_preview.gif" />
+    <Content Include="CountryLogo\saudi_arabia_preview.gif" />
+    <Content Include="CountryLogo\scotland_preview.gif" />
+    <Content Include="CountryLogo\senegal_preview.gif" />
+    <Content Include="CountryLogo\serbia_preview.gif" />
+    <Content Include="CountryLogo\seychelles_preview.gif" />
+    <Content Include="CountryLogo\sierra_leone_preview.gif" />
+    <Content Include="CountryLogo\singapore_preview.gif" />
+    <Content Include="CountryLogo\slovakia_preview.gif" />
+    <Content Include="CountryLogo\slovenia_preview.gif" />
+    <Content Include="CountryLogo\solomon_islands_preview.gif" />
+    <Content Include="CountryLogo\somalia_preview.gif" />
+    <Content Include="CountryLogo\south_africa_preview.gif" />
+    <Content Include="CountryLogo\spain_preview.gif" />
+    <Content Include="CountryLogo\sri_lanka_preview.gif" />
+    <Content Include="CountryLogo\sudan_preview.gif" />
+    <Content Include="CountryLogo\suriname_preview.gif" />
+    <Content Include="CountryLogo\swaziland_preview.gif" />
+    <Content Include="CountryLogo\sweden_preview.gif" />
+    <Content Include="CountryLogo\switzerland_preview.gif" />
+    <Content Include="CountryLogo\syria_preview.gif" />
+    <Content Include="CountryLogo\tajikistan_preview.gif" />
+    <Content Include="CountryLogo\tanzania_preview.gif" />
+    <Content Include="CountryLogo\thailand_preview.gif" />
+    <Content Include="CountryLogo\togo_preview.gif" />
+    <Content Include="CountryLogo\tonga_preview.gif" />
+    <Content Include="CountryLogo\trinidad_and_tobago_preview.gif" />
+    <Content Include="CountryLogo\tunisia_preview.gif" />
+    <Content Include="CountryLogo\turkey_preview.gif" />
+    <Content Include="CountryLogo\turkmenistan_preview.gif" />
+    <Content Include="CountryLogo\tuvalu_preview.gif" />
+    <Content Include="CountryLogo\uganda_preview.gif" />
+    <Content Include="CountryLogo\ukraine_preview.gif" />
+    <Content Include="CountryLogo\united_arab_emirates_preview.gif" />
+    <Content Include="CountryLogo\united_kingdom_preview.gif" />
+    <Content Include="CountryLogo\united_states_of_america_preview.gif" />
+    <Content Include="CountryLogo\uruguay_preview.gif" />
+    <Content Include="CountryLogo\ussr_preview.gif" />
+    <Content Include="CountryLogo\uzbekistan_preview.gif" />
+    <Content Include="CountryLogo\vanuatu_preview.gif" />
+    <Content Include="CountryLogo\vatican_city_preview.gif" />
+    <Content Include="CountryLogo\venezuela_preview.gif" />
+    <Content Include="CountryLogo\vietnam_preview.gif" />
+    <Content Include="CountryLogo\wales_preview.gif" />
+    <Content Include="CountryLogo\yemen_preview.gif" />
+    <Content Include="CountryLogo\zambia_preview.gif" />
+    <Content Include="CountryLogo\zimbabwe_preview.gif" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MyModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="MyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MyModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3065</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
